@@ -1,0 +1,419 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #CCB4FF;
+  color: #ebc400;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky {
+  background-color: #661bb1;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo .logo-imagem {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+}
+
+header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #661bb1;
+  color: #fff;
+}
+
+/* Hero */
+#hero {
+  background: linear-gradient(135deg, #adb3ff 30%, #ccb4ff 100%);
+  color: #000;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: shine 1.5s infinite alternate;
+}
+
+@keyframes shine {
+  0% { color: #FFB74D; }
+  50% { color: #FFC107; }
+  100% { color: #FF8F00; }
+}
+
+#hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ccb4ff;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #661bb1;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sobre Mim */
+#sobre-mim {
+  padding: 60px 0;
+  background-color: #fffed6;
+  border-bottom: 5px solid #000;
+}
+
+.sobre-mim-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.sobre-mim-texto h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.sobre-mim-texto p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.foto-perfil {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.1);
+}
+
+/* Projetos */
+#projetos {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+#projetos h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card .btn-projeto {
+  background-color: #661bb1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-projeto:hover {
+  background-color: #ccb4ff;
+}
+
+/* Contato */
+#contato {
+  padding: 80px 0;
+  background-color: #661bb1;
+  color: #fff;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contato p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#contato ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contato ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contato ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contato ul li a:hover {
+  color: #ebc400;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #ebc400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .sobre-mim-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .sobre-mim-texto {
+    max-width: 600px;
+  }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Estilizando as bolinhas animadas */
+.bolinhas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bolinha {
+  position: absolute;
+  bottom: -150px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: subir 10s infinite linear;
+  opacity: 0.7;
+}
+
+/* Definindo diferentes tamanhos, cores e posições iniciais para as bolinhas */
+.bolinha:nth-child(1) {
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 99, 132, 0.7); /* Vermelha */
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+.bolinha:nth-child(2) {
+  left: 30%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(54, 162, 235, 0.7); /* Azul */
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+.bolinha:nth-child(3) {
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 206, 86, 0.7); /* Amarela */
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+.bolinha:nth-child(4) {
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(75, 192, 192, 0.7); /* Verde */
+  animation-duration: 11s;
+  animation-delay: 1s;
+}
+
+.bolinha:nth-child(5) {
+  left: 90%;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(153, 102, 255, 0.7); /* Roxa */
+  animation-duration: 9s;
+  animation-delay: 3s;
+}
+
+/* Animação de subida */
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* Ajustes para o conteúdo do hero não sobrepor as bolinhas */
+#hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
